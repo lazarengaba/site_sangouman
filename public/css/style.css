@@ -1,0 +1,79 @@
+.assName{font-size: 18px; font-family: Century Gothic, 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;;}
+.assName span{color: #1da433; margin-top: 10px; position: absolute;}
+.fieldSearch{border: 1px solid #df910a; height: 35px; overflow: hidden; width: 275px;}
+.fieldSearch input{border: none; outline: none;background-color: transparent; padding: 8px 7px; font-size: 14px; width: 220px; position: absolute;}
+.fieldSearch button{background-color: transparent; border: none; padding: 5px 8px; color: #df910a; float: right}
+.centerBannerShow{display: none;}
+#img_logo{width: 11%;}
+
+.menu{background-color: #50b74e; height: 40px;  top: 135px; position: absolute; width: 100%;}
+.menu .ulG{margin-left: -55px; margin-top: 10px;}
+.menu ul .menus{display: inline-block; font-family: Century Gothic, Helvetica; margin-right: -4px;list-style-type: none; font-size: 13px;}
+.menu ul li .menuItems{color: #fff; padding: 11px 10px 11px 10px;cursor: pointer;}
+.menu ul li .menuItems:hover,.menu ul li .menuItems:focus,.menu ul li .menuItems:active{background-color: #3a8e38;}
+.menu ul li .Home{color: #fff;padding: 15px 15px 16px 15px;}
+.sousMenu {display: none;margin-right: 50px; position: absolute; border: 1px solid #a1f89f; background-color: #dff0d8; min-width: 250px; max-height: 250px; margin-top: 9px; border-top: none;}
+.sousMenu li {list-style-type: none; margin-left: -40px; height: 35px; line-height: 35px;}
+.sousMenu li div {border-bottom: 1px solid #a1f89f; border-top: 1px solid transparent; padding: 0 10px; color: #4f9e4d; font-size: 15px;}
+.sousMenu li div:hover,.sousMenu li div:focus,.sousMenu li div:active{background-color: #eaf7e9; transition-duration: 0.2s;border-top: 1px solid #a1f89f;}
+.sideBar{display: none;}
+.tabTitle{background-color: #fddcb6; color: #f39324;width: 70%; border: 1px solid #f3be7d; border-radius: 2px 2px 0 0; border-bottom: none; font-size: 13px; padding: 5px 10px;}
+.tabContent{font-size: 13px;text-align: justify; border-bottom: 1px solid #ddd; padding: 5px 10px;}
+.adder15px{height: 15px;}
+.input{border: 1px solid #aaa; padding: 7px 10px; width: 100%;}
+.tabRedTitle{background-color: #fec7cb; color: #df2532; border: 1px solid #fa9696; border-radius: 2px 2px 0 0; border-bottom: none; font-size: 13px; padding: 5px 10px;}
+
+.sideBarItem.content{margin-left: 15px;}
+#sideBarItemAccordion{padding: 15px; font-size: 12px;}
+.polesContentText{text-align: justify; font-size: 13px;}
+
+
+.articleComment{background-color: #cee9fa; padding: 10px 20px; text-align: justify; font-size: 13px; margin-top: -5px; border: 1px solid #a8d9f8;}
+
+
+
+@media(max-width: 1200px) {
+	.assName{font-size: 16px;}
+	.smHide{display: none;}
+	
+}
+
+@media(max-width: 991px){
+	.fieldSearch{width: 100%;}
+	.fieldSearch input{width: 80%;}
+	#centerBanner{display: none;}
+	.centerBannerShow{display: block;}
+	#LOGO{display: none;}
+	.divFormSearch{display: none;}
+	.banner{font-size: 13px;}
+	.assName{font-size: 14px;}
+	.sideBar{display: block;}
+	.menu ul li.menus{display: none;}
+	.menu .ulG{margin-left: -40px;}
+	.menu{top: 160px;}
+	.smHide{display: block;}
+}
+
+
+@media(max-width: 790px) {
+	
+}
+
+@media(max-width: 767px){
+	.fieldSearch input{width: 89%;}
+	.menu{top: 170px;}
+	
+}
+@media(max-width: 705px) {
+	.fieldSearch input{width: 87%;}
+	
+}
+
+@media(max-width: 600px) {
+	.fieldSearch input{width: 80%;}
+	#img_logo{width: 16%;}
+}
+	
+@media(max-width: 390px) {
+	#img_logo{width: 30%;}
+}
