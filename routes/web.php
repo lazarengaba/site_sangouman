@@ -54,7 +54,7 @@ Route::get('pepiniere d\'arbres et sylviculture', function () {
 });
 
 
-Route::get('valorisation de la biodiversité', function () {
+Route::get('valorisation de la biodiversite', function () {
     return view('valorisation');
 });
 
@@ -139,3 +139,29 @@ Route::get('videotheque', function () {
 Route::get('forum', function () {
     return view('forum');
 });
+
+Route::get('connexion', function () {
+    return view('connexion');
+});
+
+Route::get('inscription', function () {
+    return view('inscription');
+});
+
+Route::get('administration', function () {
+    return view('admin');
+});
+
+Route::get('FAQ', function () {
+    return view('FAQ');
+});
+Route::get('prix et distinctions', function () {
+    return view('prix_distinctions');
+});
+Route::get('a propos', function () {
+    return view('a_propos');
+});
+
+Route::post('checklogin', 'MainController@checkLogin');
+
+Route::get('logout', 'MainController@logout');

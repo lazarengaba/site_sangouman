@@ -27,17 +27,18 @@
                                 <a href="">
                                     English<i class="triangle right icon"></i><i class="flag gb"></i>
                                 </a>&nbsp;&nbsp;&nbsp; Français<i class="triangle right icon"></i><i class="flag fr"></i>
-                                <div style="border-top: 1px solid #ccc; margin: 5px 0;"></div>
-
-                                <center>
-                                    <a href="#"><a href="#"><i class="bookmark icon"></i>Prix et distinctions</a> | <a href="#"><i class="question circle icon"></i>FAQ</a> | <a href="#"><i class="group icon"></i>Forum </a><br />
-                                    <a href="#">
-                                        <i class="info circle icon"></i>A propos
-                                    </a> |
-                                    <a href="#">
-                                        <i class="phone icon"></i>Nous contacter
-                                    </a>
-                                </center>
+                                <div style="border-top: 1px solid #ccc; margin: 5px 0;" id="xsHide">
+                                
+                                    <center>
+                                        <a href="{{'prix et distinctions'}}"><i class="bookmark icon"></i>Prix et distinctions</a> | <a href="{{'FAQ'}}"><i class="question circle icon"></i>FAQ</a> | <a href="{{'forum'}}"><i class="group icon"></i>Forum </a><br />
+                                        <a href="{{'a propos'}}">
+                                            <i class="info circle icon"></i>A propos
+                                        </a> |
+                                        <a href="{{'contacts'}}">
+                                            <i class="phone icon"></i>Nous contacter
+                                        </a>
+                                    </center>
+                                </div>
                                 
                             </div>
 
@@ -60,11 +61,11 @@
                                 <a href="#">
                                     English version<i class="triangle right icon"></i><i class="flag gb"></i>
                                 </a>&nbsp;&nbsp;&nbsp; Version française<i class="triangle right icon"></i><i class="flag fr"></i><br /><br />
-                                <a href="#"><a href="#"><i class="bookmark icon"></i>Prix et distinctions</a> | <a href="#"><i class="question circle icon"></i>FAQ</a> | <a href="#"><i class="group icon"></i>Forum </a><br />
-                                <a href="#">
+                                <a href="{{'prix et distinctions'}}"><i class="bookmark icon"></i>Prix et distinctions</a> | <a href="{{'FAQ'}}"><i class="question circle icon"></i>FAQ</a> | <a href="{{'forum'}}"><i class="group icon"></i>Forum </a><br />
+                                <a href="{{'a propos'}}">
                                     <i class="info circle icon"></i>A propos
                                 </a> |
-                                <a href="#">
+                                <a href="{{'contacts'}}">
                                     <i class="phone icon"></i>Nous contacter
                                 </a>
                             </center>
@@ -88,54 +89,54 @@
             </a>
             <a href="#" class="item sideBarItem title" id="sideBarItemAccordion"><b>SONGOU-MAN</b> <i class="dropdown icon"></i></a>
             <div class="content">
-                <a href="historique" class="item sideBarItem content">Présentation</a>
-                <a href="mot du PDG" class="item sideBarItem content">Mot du Président</a>
-                <a href="historique" class="item sideBarItem content">Historique</a>
-                <a href="RH et organisation" class="item sideBarItem content">Les organes</a>
-                <a href="RH et organisation" class="item sideBarItem content">Partenaires</a>
-                <a href="RH et organisation" class="item sideBarItem content">Contacts</a>
+                <a href="{{'presentation'}}" class="item sideBarItem content">Présentation</a>
+                <a href="{{'mot du president'}}" class="item sideBarItem content">Mot du Président</a>
+                <a href="{{'historique'}}" class="item sideBarItem content">Historique</a>
+                <a href="{{'les organes'}}" class="item sideBarItem content">Les organes</a>
+                <a href="{{'partenaires'}}" class="item sideBarItem content">Partenaires</a>
+                <a href="{{'contacts'}}" class="item sideBarItem content">Contacts</a>
             </div>
             <a href="#" class="item sideBarItem title" id="sideBarItemAccordion"><b>PÔLES D'ACTION</b> <i class="dropdown icon"></i></a>
             <div class="content">
-                <a href="BTS" class="item sideBarItem content">Education environnementale</a>
-                <a href="LMD" class="item sideBarItem content">Pépinières d'arbres et sylviculture</a>
-                <a href="#" class="item sideBarItem content">Valorisation de la biodiversité</a>
-                <a href="E-learning" class="item sideBarItem content">Réhabilitation et conservation des sols</a>
-                <a href="formation en alternance" class="item sideBarItem content">Maraîchage</a>
-                <a href="formation a la carte" class="item sideBarItem content">Alphabétisation-gouvernance locale</a>
+                <a href="{{'education environnementale'}}" class="item sideBarItem content">Education environnementale</a>
+                <a href="{{'pepiniere d\'arbres et sylviculture'}}" class="item sideBarItem content">Pépinières d'arbres et sylviculture</a>
+                <a href="{{'valorisation de la biodiversite'}}" class="item sideBarItem content">Valorisation de la biodiversité</a>
+                <a href="{{'rehabilitation et conservation des sols'}}" class="item sideBarItem content">Réhabilitation et conservation des sols</a>
+                <a href="{{'maraichage'}}" class="item sideBarItem content">Maraîchage</a>
+                <a href="{{'alphabetisation-gouvernance locale'}}" class="item sideBarItem content">Alphabétisation-gouvernance locale</a>
             </div>
             <a href="#" class="item sideBarItem title" id="sideBarItemAccordion"><b>DOCUMENTATION</b> <i class="dropdown icon"></i></a>
             <div class="content">
-                <a href="dossiers d'inscription" class="item sideBarItem content">Rapports annuels</a>
-                <a href="frais de scolarite" class="item sideBarItem content">Rapports de projets</a>
-                <a href="concours de bourse" class="item sideBarItem content">Rapports de consultation</a>
-                <a href="rentree universitaire" class="item sideBarItem content">Rapport de formation</a>
-                <a href="rentree universitaire" class="item sideBarItem content">Discussions et interventions sur les médias</a>
-                <a href="rentree universitaire" class="item sideBarItem content">Etudes et recherches</a>
+                <a href="{{'rapports annuels'}}" class="item sideBarItem content">Rapports annuels</a>
+                <a href="{{'rapports de projet'}}" class="item sideBarItem content">Rapports de projets</a>
+                <a href="{{'rapports de consultation'}}" class="item sideBarItem content">Rapports de consultation</a>
+                <a href="{{'rapports de formation'}}" class="item sideBarItem content">Rapports de formation</a>
+                <a href="{{'discours et intervention sur les medias'}}" class="item sideBarItem content">Discussions et interventions sur les médias</a>
+                <a href="{{'etudes et recherches'}}" class="item sideBarItem content">Etudes et recherches</a>
                 
             </div>
             <a href="#" class="item sideBarItem title" id="sideBarItemAccordion"><b>PROJETS</b> <i class="dropdown icon"></i></a>
             <div class="content">
-                <a href="#" class="item sideBarItem content">Projets finis</a>
-                <a href="#" class="item sideBarItem content">Projets en cous d'exécution</a>
-                <a href="rentree universitaire" class="item sideBarItem content">Projets prévus</a>
-                <a href="rentree universitaire" class="item sideBarItem content">Carte des sites d'intervention des projets</a>
+                <a href="{{'projets finis'}}" class="item sideBarItem content">Projets finis</a>
+                <a href="{{'projets en cours'}}" class="item sideBarItem content">Projets en cous d'exécution</a>
+                <a href="{{'projet prevus'}}" class="item sideBarItem content">Projets prévus</a>
+                <a href="{{'carte des sites d\'intervention'}}" class="item sideBarItem content">Carte des sites d'intervention des projets</a>
             </div>
             <a href="#" class="item sideBarItem title" id="sideBarItemAccordion"><b>ACTUALITES ET AGENDA</b> <i class="dropdown icon"></i></a>
             <div class="content">
-                <a href="#" class="item sideBarItem content">Actualités</a>
-                <a href="#" class="item sideBarItem content">Agenda</a>
-                <a href="rentree universitaire" class="item sideBarItem content">Bulletin trimestriel</a>
+                <a href="{{'actualites'}}" class="item sideBarItem content">Actualités</a>
+                <a href="{{'agenda'}}" class="item sideBarItem content">Agenda</a>
+                <a href="{{'bulletin trimestriel'}}" class="item sideBarItem content">Bulletin trimestriel</a>
             </div>
             <a href="#" class="item sideBarItem title" id="sideBarItemAccordion"><b>ESPACE MULTIMEDIA</b> <i class="dropdown icon"></i></a>
             <div class="content">
-                <a href="#" class="item sideBarItem content">Photothèque</a>
-                <a href="#" class="item sideBarItem content">videothèque</a>
+                <a href="{{'phototheque'}}" class="item sideBarItem content">Photothèque</a>
+                <a href="{{'videtheque'}}" class="item sideBarItem content">videothèque</a>
             </div>
-            <a href="connexion" class="item sideBarItem"><b>FORUM</b></a>
-            <a href="confirmation" class="item sideBarItem"><i class="icon sign in"></i><b>Connexion</b></a>
-            <a href="#" class="item sideBarItem"><i class="icon envelope"></i><b>Nous contacter</b></a>
-            <a href="#" class="item sideBarItem"><i class="icon info circle"></i><b>A propos</b></a>
+            <a href="{{'forum'}}" class="item sideBarItem"><b>FORUM</b></a>
+            <a href="{{'connexion'}}" class="item sideBarItem"><i class="icon sign in"></i><b>Connexion</b></a>
+            <a href="{{'contacts'}}" class="item sideBarItem"><i class="icon envelope"></i><b>Nous contacter</b></a>
+            <a href="{{'a propos'}}" class="item sideBarItem"><i class="icon info circle"></i><b>A propos</b></a>
 
         </div>
 
@@ -168,6 +169,12 @@
         @yield('phototheque')
         @yield('videotheque')
         @yield('forum')
+        @yield('connexion')
+        @yield('inscription')
+        @yield('admin')
+        @yield('FAQ')
+        @yield('prixDistinctions')
+        @yield('aPropos')
 
         <!-- Menu section -->
 
@@ -247,7 +254,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{'pepiniere d\'arbres et sylviculture'}}/">
+                                        <a href="{{'pepiniere d\'arbres et sylviculture'}}">
                                             <div>
                                                 Pépinière d'arbres et syliviculture
                                             </div>
@@ -313,7 +320,7 @@
                                     <li>
                                         <a href="{{'rapports de formation'}}">
                                             <div>
-                                                Rapport de formation
+                                                Rapports de formation
                                             </div>
                                         </a>
                                     </li>
@@ -425,8 +432,13 @@
                                     FORUM
                                 </a>
                             </li>
+                            <li class="menus">
+                                <a href="{{'connexion'}}" class="menuItems">
+                                    <i class="sign in icon"></i>
+                                </a>
+                            </li>
                             <li style='float: left; list-style-type: none' class="sideBar">
-                                <a href="#" style="color: #FFF; font-size: 14px;">
+                                <a href="{{'home'}}" style="color: #FFF; font-size: 14px;">
                                     <i class="home icon"></i>
                                     <b>HOME</b>
                                 </a>
@@ -444,8 +456,6 @@
 
             
         <script type="text/javascript" src="js/jquery compressed-3.2.1.min.js"></script>
-        
-        <script type="text/javascript" src="js/jssor.slider-25.2.0.min.js"></script>
 		<script type="text/javascript" src="css/semantic/dist/semantic.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>

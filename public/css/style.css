@@ -5,11 +5,12 @@
 .fieldSearch button{background-color: transparent; border: none; padding: 5px 8px; color: #df910a; float: right}
 .centerBannerShow{display: none;}
 #img_logo{width: 11%;}
+#descActuP{width: 100%;}
 
 .menu{background-color: #50b74e; height: 40px;  top: 135px; position: absolute; width: 100%;}
 .menu .ulG{margin-left: -55px; margin-top: 10px;}
 .menu ul .menus{display: inline-block; font-family: Century Gothic, Helvetica; margin-right: -4px;list-style-type: none; font-size: 13px;}
-.menu ul li .menuItems{color: #fff; padding: 11px 10px 11px 10px;cursor: pointer;}
+.menu ul li .menuItems{color: #fff; padding: 11px 9px 11px 9px;cursor: pointer;}
 .menu ul li .menuItems:hover,.menu ul li .menuItems:focus,.menu ul li .menuItems:active{background-color: #3a8e38;}
 .menu ul li .Home{color: #fff;padding: 15px 15px 16px 15px;}
 .sousMenu {display: none;margin-right: 50px; position: absolute; border: 1px solid #a1f89f; background-color: #dff0d8; min-width: 250px; max-height: 250px; margin-top: 9px; border-top: none;}
@@ -22,15 +23,18 @@
 .adder15px{height: 15px;}
 .input{border: 1px solid #aaa; padding: 7px 10px; width: 100%;}
 .tabRedTitle{background-color: #fec7cb; color: #df2532; border: 1px solid #fa9696; border-radius: 2px 2px 0 0; border-bottom: none; font-size: 13px; padding: 5px 10px;}
+.adminBody{font-size: 13px;}
+.select {padding: 4px 5px;}
+.textarea{border: 1px solid #aaa; padding: 15px;}
+#messages{padding: 0 15px;overflow: hidden; position: absolute; height: 35px; left: 150px; right: 0; top: 0px; line-height: 35px; border-radius: 2px;}
+.successMessage{background-color: #cdf6d1; color: #39aa46; text-align: center; font-size: 13px; border: 1px solid #98e2a1;}
 
 .sideBarItem.content{margin-left: 15px;}
 #sideBarItemAccordion{padding: 15px; font-size: 12px;}
 .polesContentText{text-align: justify; font-size: 13px;}
 
 
-.articleComment{background-color: #cee9fa; padding: 10px 20px; text-align: justify; font-size: 13px; margin-top: -5px; border: 1px solid #a8d9f8;}
-
-
+.articleComment{background-color: #def0fc; padding: 10px 20px; text-align: justify; font-size: 13px; margin-top: -5px; border: 1px solid #c0e3f8;}
 
 @media(max-width: 1200px) {
 	.assName{font-size: 16px;}
@@ -50,8 +54,9 @@
 	.sideBar{display: block;}
 	.menu ul li.menus{display: none;}
 	.menu .ulG{margin-left: -40px;}
-	.menu{top: 160px;}
+	.menu{top: 140px;}
 	.smHide{display: block;}
+	#xsHide{display: none;}
 }
 
 
@@ -61,7 +66,7 @@
 
 @media(max-width: 767px){
 	.fieldSearch input{width: 89%;}
-	.menu{top: 170px;}
+	.menu{top: 120px;}
 	
 }
 @media(max-width: 705px) {
