@@ -1,3 +1,23 @@
+<?php
+    require_once "requiredPages/connect.php";
+
+    $messagesP_sql="SELECT * FROM messages_pers WHERE lu = ?";
+    $messagesP=$bdd->prepare($messagesP_sql);
+    $messagesP_exe=$messagesP->execute(array(0));
+    $messagesP_rows=$messagesP->rowCount($messagesP_sql);
+
+    $messagesE_sql="SELECT * FROM messages_entreprises WHERE lu_e = ?";
+    $messagesE=$bdd->prepare($messagesE_sql);
+    $messagesE_exe=$messagesE->execute(array(0));
+    $messagesE_rows=$messagesE->rowCount($messagesE_sql);
+
+    $news_letter_sql="SELECT * FROM news_letter";
+    $news_letter=$bdd->prepare($news_letter_sql);
+    $news_letter_exe=$news_letter->execute();
+    $news_letter_rows=$news_letter->rowCount($news_letter_sql);
+
+?>
+
 @if(!isset(Auth::user()->email)||(Auth::user()->level) != 5)
     <script>
         window.location="home";
@@ -28,42 +48,61 @@
                                     <b>Administration</b>
                                 </a>
                             </li>
-                            <li class="menus" id="menu1">
+                            <!--<li class="menus" id="menu1">
                                 <span class="menuItems">
                                     Sous-menus
                                 </span>
-                            </li>
+                            </li>-->
                             <li class="menus" id="menu2">
                                 <span class="menuItems">
-                                    Actus pricipales
+                                    Sliders
                                 </span>
-
                             </li>
                             <li class="menus" id="menu3">
                                 <span class="menuItems">
-                                    Actus secondaires
+                                    Actualités
                                 </span>
-                            </li>
-                            <li class="menus" id="menu4">
-                                <span class="menuItems">
-                                    Localités d'intervention
-                                </span>
-                            </li>
-                            <li class="menus" id="menu5">
-                                <span class="menuItems">
-                                    Ajouter un pôle
-                                </span>
-                                
-
                             </li>
                             <li class="menus" id="menu6">
                                 <span class="menuItems">
-                                    Espace multimedia
+                                    Multimedia
+                                </span>
+                            </li>
+                            <li class="menus" id="menu7">
+                                <span class="menuItems">
+                                    Messagerie
+                                    <?=(($messagesP_rows!=0||$messagesE_rows!=0) ? "<span style='background-color: #e8051a; color: #FFF; padding: 1px 4px; border-radius: 4px;'>".($messagesP_rows+$messagesE_rows)."<span>" : ""); ?>
+                                </span>
+                            </li>
+                            <li class="menus" id="menu6">
+                                <span class="menuItems">
+                                    News letter
+                                    <?=(($news_letter_rows!=0) ? "<span style='background-color: #2478b3; color: #FFF; padding: 1px 4px; border-radius: 4px;'>".$news_letter_rows."<span>" : ""); ?>
+                                </span>
+                            </li>
+                            <li class="menus" id="menu1">
+                                <span class="menuItems">
+                                    Prix et distinctions
+                                </span>
+                            </li>
+                            <!--<li class="menus" id="menu4">
+                                <span class="menuItems">
+                                    FAQ
+                                </span>
+                            </li>-->
+                            <li class="menus" id="menu5">
+                                <span class="menuItems">
+                                    Contacts
+                                </span>
+                            </li>
+                            <li class="menus" id="menu6">
+                                <span class="menuItems">
+                                    Partenaires
                                 </span>
                             </li>
                             <li class="menus">
                                 <a href="{{'logout'}}" class="menuItems">
-                                    <i class="log out icon"></i>
+                                    <i class="log out icon"></i>Déconnexion
                                 </a>
                             </li>
                             <li style='float: left; list-style-type: none' class="sideBar">
@@ -82,25 +121,7 @@
                 </div>
             </div>
         </div><br /><br />
-        <center>
-        <div class="ui buttons tiny">
-            <a href="#" class="ui button" style='border-radius: 0;'>
-                <i class="bookmark icon"></i>Prix et distinctions
-            </a>
-            <a href="#" class="ui button">
-                <i class="question circle icon"></i>FAQ
-            </a>
-            <a href="#" class="ui button">
-                <i class="calendar icon"></i>Agenda
-            </a>
-            <a href="#" class="ui button">
-                <i class="phone icon"></i>Contacts
-            </a>
-            <a href="#" class="ui button" style='border-radius: 0;'>
-                <i class="hand point right icon"></i> Partenaires
-            </a>
-        </div>
-        </center>
+        
         <br /><br /><br />
 
         <div class="ui container">
@@ -125,7 +146,7 @@
                                 <div style="border-bottom: 1px solid #ccc;"></div><br /><br />
 
                                 <a href="#">
-                                    Copyright<i class="copyright icon"></i>2018 SANGOU-MAN
+                                    Copyright<i class="copyright icon"></i>2018 SONGOU-MAN
                                 </a> |
                                 <a href="#">Tous drois réservés.</a>
 
@@ -172,6 +193,12 @@
 
              $('#menu6').click(function() {
                 $.post("ajax/espace_multimedia.blade.php", function(data) {
+                    $('.adminBody').html(data);
+                });
+            });
+
+            $('#menu7').click(function() {
+                $.post("ajax/messages/", function(data) {
                     $('.adminBody').html(data);
                 });
             });

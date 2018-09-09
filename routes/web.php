@@ -28,8 +28,8 @@ Route::get('mot du president', function () {
     return view('mot_du_president');
 });
 
-Route::get('historique', function () {
-    return view('historique');
+Route::get('actualites', function () {
+    return view('actualites');
 });
 
 Route::get('les organes', function () {

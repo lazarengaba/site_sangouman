@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Sangouman</title>
+		<title>Songou-man</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" href="css/semantic/dist/semantic.min.css" />
 		<link rel="icon" type="image/png" href="images/logo.jpg" >
@@ -24,16 +24,15 @@
                             
                             <div class="centerBannerShow" style="font-size: 13px;">
                                 <br /><br />
-                                <a href="">
-                                    English<i class="triangle right icon"></i><i class="flag gb"></i>
-                                </a>&nbsp;&nbsp;&nbsp; Français<i class="triangle right icon"></i><i class="flag fr"></i>
-                                <div style="border-top: 1px solid #ccc; margin: 5px 0;" id="xsHide">
+                                <a href="#">
+                                    <img src="images/185692665-612x612.jpg" alt="img-ENG" width="40">
+                                </a>&nbsp;&nbsp;
+                                <img src="images/drapeau-france-5075-cm.jpg" alt="img-ENG" width="37"><br /><br />
+                                <div style="border-top: 1px solid #ccc;" id="xsHide">
                                 
                                     <center>
-                                        <a href="{{'prix et distinctions'}}"><i class="bookmark icon"></i>Prix et distinctions</a> | <a href="{{'FAQ'}}"><i class="question circle icon"></i>FAQ</a> | <a href="{{'forum'}}"><i class="group icon"></i>Forum </a><br />
-                                        <a href="{{'a propos'}}">
-                                            <i class="info circle icon"></i>A propos
-                                        </a> |
+                                        <a href="{{'prix et distinctions'}}"><i class="bookmark icon"></i>Prix et distinctions</a> |<!-- | <a href="{{'FAQ'}}"><i class="question circle icon"></i>FAQ</a><br />-->
+                                        
                                         <a href="{{'contacts'}}">
                                             <i class="phone icon"></i>Nous contacter
                                         </a>
@@ -59,12 +58,11 @@
                         <div>
                             <center>
                                 <a href="#">
-                                    English version<i class="triangle right icon"></i><i class="flag gb"></i>
-                                </a>&nbsp;&nbsp;&nbsp; Version française<i class="triangle right icon"></i><i class="flag fr"></i><br /><br />
-                                <a href="{{'prix et distinctions'}}"><i class="bookmark icon"></i>Prix et distinctions</a> | <a href="{{'FAQ'}}"><i class="question circle icon"></i>FAQ</a> | <a href="{{'forum'}}"><i class="group icon"></i>Forum </a><br />
-                                <a href="{{'a propos'}}">
-                                    <i class="info circle icon"></i>A propos
-                                </a> |
+                                    <img src="images/185692665-612x612.jpg" alt="img-ENG" width="40">
+                                </a>&nbsp;&nbsp;
+                                <img src="images/drapeau-france-5075-cm.jpg" alt="img-ENG" width="37"><br /><br />
+                                <a href="{{'prix et distinctions'}}"><i class="bookmark icon"></i>Prix et distinctions</a> |<!-- | <a href="{{'FAQ'}}"><i class="question circle icon"></i>FAQ</a><br />-->
+                                
                                 <a href="{{'contacts'}}">
                                     <i class="phone icon"></i>Nous contacter
                                 </a>
@@ -192,48 +190,20 @@
                             </li>
                             <li class="menus" id="menu1">
                                 <span class="menuItems">
-                                    SONGOU-MAN
+                                    PRESENTATION
                                 </span>
                                 <ul class="sousMenu" id="sousMenu1">
                                     <li>
                                         <a href="{{ 'presentation' }}">
                                             <div>
-                                                Présentation
+                                                Textes organiques
                                             </div>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{'mot du president'}}">
                                             <div>
-                                                Mot du Président
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{'historique'}}">
-                                            <div>
-                                                Historique
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{'les organes'}}">
-                                            <div>
-                                                Les organes
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{'partenaires'}}">
-                                            <div>
-                                                Partenaires
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{'contacts'}}">
-                                            <div>
-                                                Contacts
+                                                Publications
                                             </div>
                                         </a>
                                     </li>
@@ -293,7 +263,7 @@
                             </li>
                             <li class="menus" id="menu3">
                                 <span class="menuItems">
-                                    DOCUMENTATION
+                                    RAPPORTS
                                 </span>
                                 <ul class="sousMenu" id="sousMenu3">
                                     <li>
@@ -377,35 +347,6 @@
                                 </ul>
 
                             </li>
-                            <li class="menus" id="menu5">
-                                <span class="menuItems">
-                                    ACTUALITES ET AGENDA
-                                </span>
-                                <ul class="sousMenu" id="sousMenu5">
-                                    <li>
-                                        <a href="{{'actualites'}}">
-                                            <div>
-                                                Actualités
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{'agenda'}}">
-                                            <div>
-                                                Agenda
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{'bulletins trimestriels'}}">
-                                            <div>
-                                                Bulletins trimestriels
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </li>
                             <li class="menus" id="menu6">
                                 <span class="menuItems">
                                     ESPACE MULTIMEDIA
@@ -434,7 +375,7 @@
                             </li>
                             <li class="menus">
                                 <a href="{{'connexion'}}" class="menuItems">
-                                    <i class="sign in icon"></i>
+                                    <i class="sign in icon"></i>Connexion
                                 </a>
                             </li>
                             <li style='float: left; list-style-type: none' class="sideBar">
@@ -456,7 +397,68 @@
 
             
         <script type="text/javascript" src="js/jquery compressed-3.2.1.min.js"></script>
-		<script type="text/javascript" src="css/semantic/dist/semantic.min.js"></script>
+        <script type="text/javascript" src="css/semantic/dist/semantic.min.js"></script>
+        
         <script type="text/javascript" src="js/script.js"></script>
+
+        <script>
+            $('#btnNewsLetter').click(function() {
+                var emailNewsLetter = $('#emailNewsLetter').val();
+
+                if (emailNewsLetter!="") {
+                    $('#messageRetour').html("<img src='images/ajax-loader (3).gif' width='25' style='margin-top: 3px; margin-left: 15px;' />");
+                    $.post("ajax/addEmailNewsLetter.php", {emailNewsLetter:emailNewsLetter}, function(data) {
+                        $('#messageRetour').html(data);
+                    });
+                }
+            });
+
+            $('#envoyerMessageP').click(function() {
+                var nomP = $('#nomP').val();
+                var prenomP = $('#prenomP').val();
+                var emailP = $('#emailP').val();
+                var BPP = $('#BPP').val();
+                var telP = $('#telP').val();
+                var messageP = $('#messageP').val();
+
+                if (nomP!=""&&prenomP!=""&&emailP!=""&&telP!=""&&messageP!="") {
+                    $.post("ajax/messagesP.php", {nomP:nomP,prenomP:prenomP,emailP:emailP, BPP:BPP,telP:telP,messageP:messageP}, function(data) {
+                        $('#nomP').val("");
+                        $('#prenomP').val("");
+                        $('#emailP').val("");
+                        $('#BPP').val("");
+                        $('#telP').val("");
+                        $('#messageP').val("");
+                        $('#messagePSent').fadeIn();
+                    });
+                }
+
+            });
+            
+            $('#envoyerMessageE').click(function() {
+                var nomE = $('#nomE').val();
+                var villeE = $('#villeE').val();
+                var emailE = $('#emailE').val();
+                var BPE = $('#BPE').val();
+                var telE = $('#telE').val();
+                var messageE = $('#messageE').val();
+
+                if (nomE!=""&&villeE!=""&&emailE!=""&&telE!=""&&messageE!="") {
+                    $.post("ajax/messagesE.php", {nomE:nomE,villeE:villeE,emailE:emailE, BPE:BPE, telE:telE,messageE:messageE}, function(data) {
+                        $('#nomE').val("");
+                        $('#villeE').val("");
+                        $('#emailE').val("");
+                        $('#BPE').val("");
+                        $('#telE').val("");
+                        $('#messageE').val("");
+                        $('#messageESent').fadeIn();
+                    });
+                }
+
+            });
+
+        </script>
+    
+
     </body>
 </html>

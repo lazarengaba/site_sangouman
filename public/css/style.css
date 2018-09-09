@@ -13,9 +13,9 @@
 .menu ul li .menuItems{color: #fff; padding: 11px 9px 11px 9px;cursor: pointer;}
 .menu ul li .menuItems:hover,.menu ul li .menuItems:focus,.menu ul li .menuItems:active{background-color: #3a8e38;}
 .menu ul li .Home{color: #fff;padding: 15px 15px 16px 15px;}
-.sousMenu {display: none;margin-right: 50px; position: absolute; border: 1px solid #a1f89f; background-color: #dff0d8; min-width: 250px; max-height: 250px; margin-top: 9px; border-top: none;}
+.sousMenu {display: none;margin-right: 50px; position: absolute; border: 1px solid #a1f89f; background-color: #FFF; min-width: 250px; max-height: 250px; margin-top: 9px; border-top: none;}
 .sousMenu li {list-style-type: none; margin-left: -40px; height: 35px; line-height: 35px;}
-.sousMenu li div {border-bottom: 1px solid #a1f89f; border-top: 1px solid transparent; padding: 0 10px; color: #4f9e4d; font-size: 15px;}
+.sousMenu li div {border-bottom: 1px solid #bbf8ba; border-top: 1px solid transparent; padding: 0 10px; color: #4f9e4d; font-size: 15px;}
 .sousMenu li div:hover,.sousMenu li div:focus,.sousMenu li div:active{background-color: #eaf7e9; transition-duration: 0.2s;border-top: 1px solid #a1f89f;}
 .sideBar{display: none;}
 .tabTitle{background-color: #fddcb6; color: #f39324;width: 70%; border: 1px solid #f3be7d; border-radius: 2px 2px 0 0; border-bottom: none; font-size: 13px; padding: 5px 10px;}
@@ -28,17 +28,68 @@
 .textarea{border: 1px solid #aaa; padding: 15px;}
 #messages{padding: 0 15px;overflow: hidden; position: absolute; height: 35px; left: 150px; right: 0; top: 0px; line-height: 35px; border-radius: 2px;}
 .successMessage{background-color: #cdf6d1; color: #39aa46; text-align: center; font-size: 13px; border: 1px solid #98e2a1;}
+.slidePdesc{line-height: 25px;font-size: 17px; text-align: justify; width: 100%;background-color: #fff; opacity: 0.5; border-radius: 4px; padding: 10px 20px; margin-top: -140px;}
+
 
 .sideBarItem.content{margin-left: 15px;}
 #sideBarItemAccordion{padding: 15px; font-size: 12px;}
 .polesContentText{text-align: justify; font-size: 13px;}
 
 
-.articleComment{background-color: #def0fc; padding: 10px 20px; text-align: justify; font-size: 13px; margin-top: -5px; border: 1px solid #c0e3f8;}
+.articleComment{ height: 200px; overflow: hidden; background-color: #def0fc; padding: 10px 20px; text-align: justify; font-size: 13px; margin-top: -5px; border: 1px solid #c0e3f8;}
+
+
+#slider{width: 100%; height: 420px;}
+#slider .slides{width: 100%; height: 420px; margin: 0; padding: 0; display: block;}
+
+
+   /* jssor slider loading skin double-tail-spin css */
+
+   .jssorl-004-double-tail-spin img {
+	animation-name: jssorl-004-double-tail-spin;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes jssorl-004-double-tail-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+.jssorb051 .i {position:absolute;cursor:pointer;}
+.jssorb051 .i .b {fill:#fff;fill-opacity:0.5;stroke:#000;stroke-width:400;stroke-miterlimit:10;stroke-opacity:0.5;}
+.jssorb051 .i:hover .b {fill-opacity:.7;}
+.jssorb051 .iav .b {fill-opacity: 1;}
+.jssorb051 .i.idn {opacity:.3;}
+
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+
+
+
+
+
+
+.newsLetter{background-color: #e0d90d; color: #000; padding: 7px 0; margin-left: 15px; text-align: center;}
+.newsLettercontent {border: 1px solid #e0d90d; padding: 15px 20px; height: 245px; margin-left: 15px;}
+
+
 
 @media(max-width: 1200px) {
 	.assName{font-size: 16px;}
 	.smHide{display: none;}
+	.newsLettercontent{height: 200px; font-size: 12px;}
 	
 }
 
@@ -57,7 +108,18 @@
 	.menu{top: 140px;}
 	.smHide{display: block;}
 	#xsHide{display: none;}
+	.newsLetter{margin-top: 25px; margin-left: 0; margin-right: -15px;}
+	.newsLettercontent{margin-left: 0; margin-right: -15px;}
 }
+
+.messageEnvoyes{background-color:#c8e4f8; text-align: justify; border: 1px solid #a1d5f9; padding: 5px 20px; margin-top: 5px; border-radius: 15px;}
+
+#tablePers tr td{border: 1px solid #ccc; padding: 5px 15px; }
+
+.actuContent{text-align: justify; height: 150px;}
+#messageRetour{top: 50px; position: absolute; text-align: center; width: 100%; height: 40px; display: inline-block;}
+#messagePSent, #messageESent{display: none;background-color: green; color: #fff; float: right; padding: 7px 15px; border-radius: 3px;}
+
 
 
 @media(max-width: 790px) {
@@ -66,7 +128,7 @@
 
 @media(max-width: 767px){
 	.fieldSearch input{width: 89%;}
-	.menu{top: 120px;}
+	.menu{top: 130px;}
 	
 }
 @media(max-width: 705px) {

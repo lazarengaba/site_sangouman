@@ -6,7 +6,7 @@
 		<div class="ui grid">
 			<div class="row">
 				<div class="ui sixteen wide computer">
-					<h3>Historique</h3>
+					
 				</div>
 			</div>
 		</div>
